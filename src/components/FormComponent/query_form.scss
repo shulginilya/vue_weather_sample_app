@@ -1,0 +1,38 @@
+@import '@/assets/sass/variables.scss';
+
+@mixin message-input-typography {
+    color: $black;
+    opacity: 1;
+}
+
+.query_form {
+    display: flex;
+    &__form {
+        padding: 15px 10px 15px;
+        &__input {
+            border-radius: 4px;
+            border: solid 2px $black;
+            height: 35px;
+            @include message-input-typography();
+            padding: 0 10px 0 12px;
+            width: 100%;
+            margin-bottom: 10px;
+            &:focus, &:active {
+                outline: none;
+                box-shadow: none;
+            }
+            &::placeholder {
+                @include message-input-typography();
+            }
+        }
+        &__btn {
+            height: 35px;
+            border: none;
+            border-radius: 4px;
+            width: 60px;
+            background-color: $orange;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}

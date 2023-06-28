@@ -1,0 +1,10 @@
+@import '../../variables';
+@import '../../reset';
+
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: $white;
+    font-size: $font-m;
+}
+
+@import './errors';

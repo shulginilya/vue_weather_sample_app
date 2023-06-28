@@ -1,0 +1,24 @@
+@import '@/assets/sass/variables.scss';
+
+.layout {
+    display: block;
+    height: auto;
+    @media (min-width: $min-screen-mobile) {
+        display: flex;
+        height: 100vh;
+    }
+    &__left {
+        width: 100%;
+        flex-grow: 0;
+        margin-bottom: 30px;
+        background-color: $grey;
+        @media (min-width: $min-screen-mobile) {
+            flex-grow: 1;
+            width: 300px;
+            margin-bottom: 0;
+        }
+    }
+    &__right {
+        width: 100%;
+    }
+}
